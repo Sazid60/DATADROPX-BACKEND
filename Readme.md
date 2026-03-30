@@ -3,9 +3,6 @@
 This project is a clean Node.js + Express + TypeScript backend for managing employees and departments.
 It is designed for a MERN mini project and supports validation, filtering, search, sorting, pagination, and centralized error handling.
 
-## ER Diagram
-
-![ER Diagram](image-1.png)
 
 ## Tech Stack
 
@@ -17,8 +14,7 @@ It is designed for a MERN mini project and supports validation, filtering, searc
 
 ## Project Features
 
-- Employee CRUD API
-- Department CRUD API (create, list, get single, delete)
+- Employee CRUD API (create, list, get single, delete)
 - Query support: filter, search, sort, field selection, date filter, pagination
 - Global error handling with human-readable messages
 - Structured API response format
@@ -90,63 +86,6 @@ Create a .env file in the project root with:
 ## Postman API Documentation
 
 Below are all available endpoints, payloads, and usage examples.
-
----
-
-## Department Endpoints
-
-### 1) Create Department
-
-- Method: POST
-- URL: http://localhost:5000/api/department
-
-Payload:
-
-{
-"name": "Human Resources",
-"description": "Handles hiring and employee relations"
-}
-
-Notes:
-
-- name is required
-- description is optional
-
-### 2) Get All Departments
-
-- Method: GET
-- URL: http://localhost:5000/api/department
-
-Supported query parameters:
-
-- searchTerm
-- sort
-- fields
-- page
-- limit
-- dateSearch
-- direct filters such as name
-
-Examples:
-
-- http://localhost:5000/api/department?searchTerm=human
-- http://localhost:5000/api/department?sort=-createdAt&page=1&limit=10
-- http://localhost:5000/api/department?fields=name,description
-- http://localhost:5000/api/department?dateSearch=2026-03-30
-
-### 3) Get Single Department
-
-- Method: GET
-- URL: http://localhost:5000/api/department/:id
-
-Example:
-
-- http://localhost:5000/api/department/67e8b6e4a6b1cc0c3a72f001
-
-### 4) Delete Department
-
-- Method: DELETE
-- URL: http://localhost:5000/api/department/:id
 
 ---
 
