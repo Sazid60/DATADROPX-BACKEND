@@ -1,6 +1,6 @@
 
 
-import { TErrorSources, TGenericErrorResponse } from "../interfaces/error.types"
+import type { TErrorSources, TGenericErrorResponse } from "../interfaces/error.types"
 
 
 export const handleZodError = (err: any): TGenericErrorResponse => {

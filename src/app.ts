@@ -1,9 +1,9 @@
 
-import express, { Request, Response } from "express"
+import express, { type Request, type Response } from "express"
 
 import cors from "cors"
 import { envVars } from "./app/config/env"
-import { router } from "./app/routes"
+import { router } from "./app/routes/index"
 import { globalErrorHandler } from "./app/middlewares/globalErrorHandler"
 import notFound from "./app/middlewares/notFound"
 
